@@ -1,1 +1,1 @@
-worker: node yuku.js
+worker: node ams.js
