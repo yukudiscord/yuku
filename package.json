@@ -2,9 +2,9 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.0",
-  "main": "yuku.js",
+  "main": "ams.js",
   "scripts": {
-    "start": "node yuku.js"
+    "start": "node ams.js"
    },
    "dependencies": {
      "discord.js": "11.10",
