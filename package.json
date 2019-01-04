@@ -7,7 +7,7 @@
     "start": "node yuku.js"
    },
    "dependencies": {
-     "discord.js": "11.10",
+     "discord.js": "11.4.2",
      "request": "2.81.0"
      }
 }
