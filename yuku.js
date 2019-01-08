@@ -160,6 +160,15 @@ if(message.content.startsWith(p + `топы`)) {
     .setColor("#ffe4e1");
     message.channel.send({embed});
 }
+if(message.content.startsWith(p + 'embed')) {
+    let say = message.content.slice((p + 'embed').length);
+    const embed = new Discord.RichEmbed()
+    .setColor("RANDOM")
+    .setTitle("СВЕЖИЕ НОВОСТИ!")
+    .setDescription(say)
+    .setTimestamp();
+    message.channel.send({embed});
+}
 });
 client.on('ready', () => {
         console.log(`Готов к бою!`)
