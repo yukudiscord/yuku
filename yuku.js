@@ -3,7 +3,7 @@ const client =new Discord.Client();
 
 p="юку!"
 
-client.login("PROCESS.ENV.TOKEN");
+client.login(PROCESS.ENV.TOKEN);
 
 client.on('message', message => {
     const args = message.content.slice(p.length).trim().split(/ +/g);
