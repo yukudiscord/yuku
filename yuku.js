@@ -163,5 +163,5 @@ if(message.content.startsWith(p + `топы`)) {
 });
 client.on('ready', () => {
         console.log(`Готов к бою!`)
-        client.user.setPresence({ game: { name: `за сервер YUKU`, type: 2 } }).catch();  
+        client.user.setPresence({ game: { name: `за сервер YUKU`, type: 3 } }).catch();  
 });
