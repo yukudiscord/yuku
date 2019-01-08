@@ -156,7 +156,7 @@ if(message.content.startsWith(p + `топы`)) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-sticker/64/top_hat-512.png')
     .setTitle("ИНФОРМАЦИЯ О ТОПАХ ПО ДОНАТАМ")
-    .setDescription("**1.`_Neon_` - 26руб.\n2.`CaMuR(Kpюк)(КоМаР)` - 25руб.\n3.----\n4.----\n5.----\n6.----\n7.----\n8.----\n9.----\n10.----**")
+    .setDescription("**1.`_Neon_` - 36руб.\n2.`CaMuR(Kpюк)(КоМаР)` - 25руб.\n3.----\n4.----\n5.----\n6.----\n7.----\n8.----\n9.----\n10.----**")
     .setColor("#ffe4e1");
     message.channel.send({embed});
 }
