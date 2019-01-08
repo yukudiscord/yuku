@@ -161,3 +161,7 @@ if(message.content.startsWith(p + `топы`)) {
     message.channel.send({embed});
 }
 });
+client.on('ready', () => {
+        console.log(`Готов к бою!`)
+        client.user.setPresence({ game: { name: `за сервер YUKU`, type: 2 } }).catch();  
+});
