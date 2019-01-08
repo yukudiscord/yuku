@@ -160,7 +160,8 @@ if(message.content.startsWith(p + `топы`)) {
     .setColor("#ffe4e1");
     message.channel.send({embed});
 }
-if(message.content.startsWith(p + 'embed')) {
+////////////////////////////////////////////////////////////////////////////////
+if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
     const embed = new Discord.RichEmbed()
     .setColor("RANDOM")
