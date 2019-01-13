@@ -65,13 +65,19 @@ if(message.content.startsWith(p + `правила`)) {
     message.channel.send({embed});
 }
 if(message.content.startsWith(p + 'дп')) {
+    const embed = nee Discord.RichEmbed()
+    .setImage("https://cdn.discordapp.com/attachments/473062290040553472/534087219082690582/PicsArt_01-13-09.11.52.jpg")
+    .setColor(#363940")
+    message.channel.send({embed});
+}
+if(message.content.startsWith(p + 'дп')) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn3.iconfinder.com/data/icons/abstract-1/512/Welcome-512.png')
-    .setTitle("Добро пожаловать на **Y U K U**??")
-    .addField("Цель сервера:","**•**Создать для вас уютную атмосферу\n**•**Лампово пообщатся\n**•**Расслабится")
+    .setTitle("Добро пожаловать!")
+    .addField("**Привет, путник. Ты зашел на наш сервер, значит ты им заинтересовался.\n\nЗачем нужен этот сервер?\nНа нашем сервере вы сможете найти участника для совместной игры, а также просто лампово пообщаться.\n\n Что вы найдете на нашем сервере?\n• Ламповое общение\n• Хорошее оформление\n• Выбор цветных ролей\n• Ивенты\nИ многое другое. Что бы в этом убедиться, ты можешь остаться на нашем сервере и изучить все самостоятельно.\n\nУдачи!**")
     .setDescription("Здесь можно найти новых друзей создать тиму по играм и так же лампово пообщатся ?")
     .setFooter("Y U K U | WELCOME")
-    .setColor("#ffe4e1");
+    .setColor("#363940");
     message.channel.send({embed});
 }
 if(message.content.startsWith(p + 'реклама')) {
