@@ -67,7 +67,7 @@ if(message.content.startsWith(p + `правила`)) {
 if(message.content.startsWith(p + 'дп')) {
     const embed = new Discord.RichEmbed()
     .setImage("https://cdn.discordapp.com/attachments/473062290040553472/534087219082690582/PicsArt_01-13-09.11.52.jpg")
-    .setColor(#363940")
+    .setColor("#363940")
     message.channel.send({embed});
 }
 if(message.content.startsWith(p + 'дп')) {
