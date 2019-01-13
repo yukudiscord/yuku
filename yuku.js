@@ -59,7 +59,7 @@ if(message.content.startsWith(p + `правила`)) {
     .setTitle("Правила сервера Y U K U")
     .setDescription("На сервере запрещается:\n2.1 -> Кричать в микрофон\n2.2 -> Перебивать говорящешо\n2.3 -> Включать музыку в каналах для общения\n2.4 -> Издавать противные звуки\n2.5 -> Выходить и заходить в голосовой канал, это мешает участникам нормально говорить")
     .setFooter("Y U K U | RULES")
-    .setColor("");
+    .setColor("#363940");
     message.channel.send({embed});
 }
 if(message.content.startsWith(p + 'дп')) {
