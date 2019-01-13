@@ -72,7 +72,6 @@ if(message.content.startsWith(p + 'дп')) {
 }
 if(message.content.startsWith(p + 'дп')) {
     const embed = new Discord.RichEmbed()
-    .setThumbnail('https://cdn3.iconfinder.com/data/icons/abstract-1/512/Welcome-512.png')
     .setTitle("Добро пожаловать!")
     .setDescription("**Привет, путник. Ты зашел на наш сервер, значит ты им заинтересовался.\n\nЗачем нужен этот сервер?\nНа нашем сервере вы сможете найти участника для совместной игры.\n\nЧто вы найдете на нашем сервере?\n• Ламповое общение\n• Хорошее оформление\n• Выбор цветных ролей\n• Ивенты\nИ многое другое. Что бы в этом убедиться, ты можешь остаться на нашем сервере и изучить все самостоятельно.\n\nУдачи!**")
     .setFooter("Y U K U | WELCOME")
