@@ -40,6 +40,7 @@ if(message.content.startsWith(p + `правила`)) {
     .setColor("#363940")
     message.channel.send({embed});
 }
+if(message.content.startsWith(p + `правила`)) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn2.iconfinder.com/data/icons/scenarium-vol-2-1/128/040_rules_book_do_not_pros_cons_handbook-512.png')
     .setTitle("Правила сервера Y U K U")
@@ -54,6 +55,7 @@ if(message.content.startsWith(p + `правила`)) {
     .setColor("#363940")
     message.channel.send({embed});
 }
+if(message.content.startsWith(p + `правила`)) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn2.iconfinder.com/data/icons/scenarium-vol-2-1/128/040_rules_book_do_not_pros_cons_handbook-512.png')
     .setTitle("Правила сервера Y U K U")
