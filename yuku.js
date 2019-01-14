@@ -91,6 +91,13 @@ if(message.content.startsWith(p + 'каналы')) {
     .setColor("#363940")
     message.channel.send({embed})
 }
+if(message.content.startsWith(p + 'каналы')) {
+    const embed = new Discord.RichEmbed()
+    .setTitle("Категория Основные чаты 💬")
+    .setDescription("<#529326396871409693> - чат\n<#529328561203707905> - канал для взаимодействия с ботами\n<#529612103980417025> - 18+ канал")
+    .setColor("#363940")
+    message.channel.send({embed})
+}
 if(message.content.startsWith(p + 'реклама')) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn0.iconfinder.com/data/icons/contact-us-aqua-vol-2/500/Partnership-512.png')
