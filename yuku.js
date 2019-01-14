@@ -85,7 +85,7 @@ if(message.content.startsWith(p + 'роли')) {
     message.channel.send({embed})
 }
 if(message.content.startsWith(p + 'роли')) {
-    .setDescription("<@&473881523557367819> - роль владельцев.")
+    .setDescription("<@&473881523557367819> - роль владельцев")
     .setColor("#363940")
     message.channel.send({embed})
 }
