@@ -80,7 +80,7 @@ if(message.content.startsWith(p + 'дп')) {
 }
 if(message.content.startsWith(p + 'каналы')) {
     const embed = new Discord.RichEmbed()
-    .setImage("https://cdn.dhttps://cdn.discordapp.com/attachments/490525131337105418/534476091205877761/PicsArt_01-13-11.22.39.jpg")
+    .setImage("https://cdn.discordapp.com/attachments/490525131337105418/534476091205877761/PicsArt_01-13-11.22.39.jpg")
     .setColor("#363940")
     message.channel.send({embed})
 }
