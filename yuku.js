@@ -104,7 +104,7 @@ if(message.content.startsWith(p + 'каналы')) {
     .setDescription("<#529339985837555752> - провождение ивентов\n<#529339985149689916> - розыгрыши и раздачи\n<#529341091523198986> - сигны от вас\n<#530025051244724244> - канал с мемами")
     .setColor("#363940")
     message.channel.send({embed})
-;
+}
 if(message.content.startsWith(p + 'реклама')) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn0.iconfinder.com/data/icons/contact-us-aqua-vol-2/500/Partnership-512.png')
