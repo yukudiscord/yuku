@@ -78,6 +78,18 @@ if(message.content.startsWith(p + 'дп')) {
     .setColor("#363940");
     message.channel.send({embed});
 }
+if(message.content.startsWith(p + 'роли')) {
+    const embed = new DiscordRichEmbed()
+    .setImage("https://cdn.discordapp.com/attachments/490525131337105418/534476091205877760/PicsArt_01-13-11.21.57.jpg")
+    .setColor("#363940")
+    message.channel.send({embed})
+}
+if(message.content.startsWith(p + 'роли')) {
+    .setTitle("Информация о ролях")
+    .setDescription("**Роли на сервере "YUKU"**\n\n<@&473881523557367819> - роль владельцев.")
+    .setColor("#363940")
+    message.channel.send({embed})
+}
 if(message.content.startsWith(p + 'реклама')) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn0.iconfinder.com/data/icons/contact-us-aqua-vol-2/500/Partnership-512.png')
