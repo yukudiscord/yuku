@@ -78,14 +78,15 @@ if(message.content.startsWith(p + 'дп')) {
     .setColor("#363940");
     message.channel.send({embed});
 }
-if(message.content.startsWith(p + 'роли')) {
+if(message.content.startsWith(p + 'каналы')) {
     const embed = new DiscordRichEmbed()
-    .setImage("https://cdn.discordapp.com/attachments/490525131337105418/534476091205877760/PicsArt_01-13-11.21.57.jpg")
+    .setImage("https://cdn.dhttps://cdn.discordapp.com/attachments/490525131337105418/534476091205877761/PicsArt_01-13-11.22.39.jpg")
     .setColor("#363940")
     message.channel.send({embed})
 }
-if(message.content.startsWith(p + 'роли')) {
-    .setDescription("<@&473881523557367819> - роль владельцев")
+if(message.content.startsWith(p + 'каналы')) {
+    .setTitle("Категория YUKU 🌹")
+    .setDescription("<#474196834659860491> - канал в который вы попадаете при подключении к серверу\n<#493053541104222230> - канал с партнерами нашего сервера\n<#474197413129748490> - новости и обновления нашего сервера\n<#529759322973143040> - информация о пожертвованиях серверу\n<#532668472837013504> - канал для выбора цветовой роли")
     .setColor("#363940")
     message.channel.send({embed})
 }
