@@ -86,7 +86,7 @@ if(message.content.startsWith(p + 'роли')) {
 }
 if(message.content.startsWith(p + 'роли')) {
     .setTitle("Информация о ролях")
-    .setDescription("**Роли на сервере "YUKU"**\n\n<@&473881523557367819> - роль владельцев.")
+    .setDescription("**Роли на сервере ``YUKU``**\n\n<@&473881523557367819> - роль владельцев.")
     .setColor("#363940")
     message.channel.send({embed})
 }
