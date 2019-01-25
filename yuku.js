@@ -2,6 +2,7 @@ Discord =require('discord.js');
 const client =new Discord.Client();
 
 p="юку!"
+c="#ddfffa"
 
 client.login(process.env.TOKEN);
 
