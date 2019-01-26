@@ -6,6 +6,8 @@ c="#ddfffa"
 
 client.login(process.env.TOKEN);
 
+if(message.channel.id === '12345678'){message.react(':love:')}
+
 client.on('message', message => {
     const args = message.content.slice(p.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
