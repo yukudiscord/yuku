@@ -6,6 +6,19 @@ c="#ddfffa"
 
 client.login(process.env.TOKEN);
 
+client.on(
+    'guildMemberAdd',
+    (member) =>
+        member
+            .guild
+            .channels
+            .get('538734585937395761')
+            .send(
+                new Discord.RichEmbed()
+                .setDescription(`${member} стал ${member.guild.memberCount} участником нашего сервера. Поприветствуем его!`)
+            )
+)
+ 
 client.on('message', message => {	
     const args = message.content.slice(p.length).trim().split(/ +/g);	
     const command = args.shift().toLowerCase();
