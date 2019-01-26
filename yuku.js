@@ -10,20 +10,6 @@ client.on('message', message => {
     const args = message.content.slice(p.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 if(message.channel.id === '529339985837555752'){message.react("<:love:537673302383263765>")}
-client.on('guildMemberAdd', member => {
-const embed = new Discord.RichEmbed()
-    .setImage(`https://media1.tenor.com/images/fdafbad47d6a69cb5d3a90a8b9dff86f/tenor.gif?itemid=4936338%27`)
-    .setTitle(`Добро пожаловать!`)
-    .setColor(c)
-    .setDescription(`**Приветствуем тебя на нашем сервере. Спасибо, что присоединился именно к нам.
-
-На нашем сервере ты встретишь:
-• 1000+ сообщений каждый день
-• Хорошее оформление
-• Собственный бот
-И многое другое. Можешь убедиться в том прямо сейчас.**`)
-  member.send({embed})
-})
 if (message.content.startsWith(p + `eval`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     const code = message.content.split(" ").slice(1).join(" ");
     try {
