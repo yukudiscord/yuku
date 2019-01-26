@@ -21,7 +21,7 @@ const embed = new Discord.RichEmbed()
 • Хорошее оформление
 • Собственный бот
 И многое другое. Можешь убедиться в том прямо сейчас.**`)
-  message.author.send({embed})
+  member.send({embed})
 })
 if (message.content.startsWith(p + `eval`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     const code = message.content.split(" ").slice(1).join(" ");
