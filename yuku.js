@@ -16,6 +16,7 @@ client.on(
             .send(
                 new Discord.RichEmbed()
                 .setDescription(`${member} стал ${member.guild.memberCount} участником нашего сервера. Поприветствуем его!`)
+                .setColor(c)
             )
 )
  
