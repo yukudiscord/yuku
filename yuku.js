@@ -14,6 +14,7 @@ client.on('guildMemberAdd', member => {
 const embed = new Discord.RichEmbed()
     .setImage(`https://media1.tenor.com/images/fdafbad47d6a69cb5d3a90a8b9dff86f/tenor.gif?itemid=4936338%27`)
     .setTitle(`Добро пожаловать!`)
+    .setColor(c)
     .setDescription(`**Приветствуем тебя на нашем сервере. Спасибо, что присоединился именно к нам.
 
 На нашем сервере ты встретишь:
