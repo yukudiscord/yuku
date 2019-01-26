@@ -10,6 +10,7 @@ client.on('message', message => {
     const args = message.content.slice(p.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 if(message.channel.id === '529339985837555752'){message.react("<:love:537673302383263765>")}
+client.on('guildMemberAdd', member => {
 const embed = new Discord.RichEmbed()
     .setImage(`https://media1.tenor.com/images/fdafbad47d6a69cb5d3a90a8b9dff86f/tenor.gif?itemid=4936338%27`)
     .setTitle(`Добро пожаловать!`)
