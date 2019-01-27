@@ -24,8 +24,9 @@ client.on('message', message => {
     const args = message.content.slice(p.length).trim().split(/ +/g);	
     const command = args.shift().toLowerCase();
 if(message.content.startsWith(p + `эс`)){
+message.delete()
 let url = args.join(" ");
-message.channel.send(new Discord.RichEmbed().setImage(url)).catch(err => message.channel.send(err))
+message.channel.send(new Discord.RichEmbed().setColor(c).setImage(url)).catch(err => message.channel.send(err))
 }
 if (message.content.startsWith(p + `eval`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     const code = message.content.split(" ").slice(1).join(" ");
