@@ -23,7 +23,7 @@ client.on(
 client.on('message', message => {	
     const args = message.content.slice(p.length).trim().split(/ +/g);	
     const command = args.shift().toLowerCase();
-if(message.content.startsWith(p + `правила`)){
+if(message.content.startsWith(p + `эс`)){
 let url = args.join(" ");
 message.channel.send(new Discord.RichEmbed().setImage(url)).catch(err => message.channel.send(err))
 }
