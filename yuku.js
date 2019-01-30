@@ -3,6 +3,8 @@ const client =new Discord.Client();
 
 p="юку!"
 c="#ddfffa"
+let aicon = message.guild.iconURL;
+nick= message.member.name;
 
 client.login(process.env.TOKEN);
 
@@ -15,11 +17,11 @@ client.on(
             .get('538734585937395761')
             .send(
                 new Discord.RichEmbed()
+                .setAuthor(`${nick}`,`${aicon}`)
                 .setDescription(`${member} стал ${member.guild.memberCount} участником нашего сервера. Поприветствуем его!`)
                 .setColor(c)
             )
 )
- 
 client.on('message', message => {	
     const args = message.content.slice(p.length).trim().split(/ +/g);	
     const command = args.shift().toLowerCase();
@@ -53,7 +55,6 @@ if (message.content.startsWith(p + `евал`) && (message.author.id === "406343
      message.channel.send({embed});
    }
 }
-
 if(message.content.startsWith(p + `правила`)) {
     const embed = new Discord.RichEmbed()
     .setThumbnail('https://cdn2.iconfinder.com/data/icons/scenarium-vol-2-1/128/040_rules_book_do_not_pros_cons_handbook-512.png')
