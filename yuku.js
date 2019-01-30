@@ -3,8 +3,8 @@ const client =new Discord.Client();
 
 p="юку!"
 c="#ddfffa"
-let aicon = message.guild.iconURL;
-let nick= message.member.name;
+//let aicon = message.guild.iconURL;
+//let nick= message.member.name;
 
 client.login(process.env.TOKEN);
 
@@ -17,7 +17,7 @@ client.on(
             .get('538734585937395761')
             .send(
                 new Discord.RichEmbed()
-                .setAuthor(`${nick}`,`${aicon}`)
+                //.setAuthor(`${nick}`,`${aicon}`)
                 .setDescription(`${member} стал ${member.guild.memberCount} участником нашего сервера. Поприветствуем его!`)
                 .setColor(c)
             )
