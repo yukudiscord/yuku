@@ -28,7 +28,7 @@ message.delete()
 let url = args.join(" ");
 message.channel.send(new Discord.RichEmbed().setColor(c).setImage(url)).catch(err => message.channel.send(err))
 }
-if (message.content.startsWith(p + `eval`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
+if (message.content.startsWith(p + `евал`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     const code = message.content.split(" ").slice(1).join(" ");
     try {
      let evaled = eval(code);
@@ -190,10 +190,9 @@ if(message.content.startsWith(p + `донат`)) {
 }
 if(message.content.startsWith(p + `топы`)) {
     const embed = new Discord.RichEmbed()
-    .setThumbnail('https://cdn2.iconfinder.com/data/icons/new-year-s-hand-drawn-sticker/64/top_hat-512.png')
-    .setTitle("ИНФОРМАЦИЯ О ТОПАХ ПО ДОНАТАМ")
+    .setTitle("Топ 10 донатеров!")
     .setDescription("**1.`_Neon_` - 36руб.\n2.`CaMuR(Kpюк)(КоМаР)` - 25руб.\n3.----\n4.----\n5.----\n6.----\n7.----\n8.----\n9.----\n10.----**")
-    .setColor("#ffe4e1");
+    .setColor("#ddfffa");
     message.channel.send({embed});
 }
 if (message.content.startsWith(p + `hi`)) {
