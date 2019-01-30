@@ -4,7 +4,7 @@ const client =new Discord.Client();
 p="юку!"
 c="#ddfffa"
 let aicon = message.guild.iconURL;
-nick= message.member.name;
+let nick= message.member.name;
 
 client.login(process.env.TOKEN);
 
