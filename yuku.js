@@ -17,7 +17,7 @@ client.on(
             .get('538734585937395761')
             .send(
                 new Discord.RichEmbed()
-                .setAuthor(`${message.guild.iconURL}`, "Yuku")
+                //.setAuthor(`${message.guild.iconURL}`, "Yuku")
                 .setDescription(`${member} стал ${member.guild.memberCount} участником нашего сервера. Поприветствуем его!`)
                 .setColor(c)
             )
