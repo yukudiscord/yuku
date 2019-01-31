@@ -462,16 +462,16 @@ message.author.send(`
 }
 if (message.content.startsWith(p + `профиль`)) { 
     message.delete()
-    let aicon = message.author.iconURL;
-    let sjoin = message.member.joinedAt;
+ //   let aicon = message.author.iconURL;
+  //  let sjoin = message.member.joinedAt;
   const embed = new Discord.RichEmbed()
   .setTtitle(message.author+`ваш профиль.`)
-  .setImage(aicon)
+  .setImage("")
   .setDescription(`
-  Ты к нам пришёл: ${sjoin}
+  Ты к нам пришёл: 
   Посмотерть свой счёт: \`;bal\`
   Посмотреть свой уровень: \`!rank\``)
-  message.channel.send({embed})
+  message.channel.send({embed});
 }                                         
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
