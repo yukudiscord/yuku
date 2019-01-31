@@ -438,7 +438,11 @@ if (message.content.startsWith(p + `убится`)) {
               msg.edit({embed}).then(function(message) {
                   }).catch(function() {});
             });
-            }                        
+            }
+if (message.content.startsWith(p + `реакции`)) { 
+    let p2 = "юку!"
+message.author.send(`**Реакции с другим пользователям:**\n\`${p2}\`поцелуй`)
+}                       
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
