@@ -462,10 +462,10 @@ message.author.send(`
 }
 if (message.content.startsWith(p + `профиль`)) { 
     message.delete()
-  let aicon = message.author.iconURL;
+  let aicon = message.author.avatarURL;
   let sjoin = message.member.joinedAt;
   let embed = new Discord.RichEmbed()
-  .setTitle(message.author+`ваш профиль.`)
+  .setTitle(message.author.username+`ваш профиль.`)
   .setImage(aicon)
   .setColor(c)
   .setDescription(`
