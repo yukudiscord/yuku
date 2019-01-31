@@ -464,9 +464,10 @@ if (message.content.startsWith(p + `профиль`)) {
     message.delete()
  //   let aicon = message.author.iconURL;
   //  let sjoin = message.member.joinedAt;
-  const embed = new Discord.RichEmbed()
+  let embed = new Discord.RichEmbed()
   .setTtitle(message.author+`ваш профиль.`)
   .setImage("")
+  .setColor(c)
   .setDescription(`
   Ты к нам пришёл: 
   Посмотерть свой счёт: \`;bal\`
