@@ -303,7 +303,7 @@ if (message.content.startsWith(p + `спать`)) {
                 }).catch(function() {});
     });
 }
-if (message.content.startsWith(p + `убится`)) {
+if (message.content.startsWith(p + `суицид`)) {
     message.delete();
     let user = message.author;
     message.channel.send('Загрузка...').then(msg => {
@@ -455,7 +455,7 @@ message.author.send(`
 
 \`${p2}привет\`
 \`${p2}злится\`
-\`${p2}убится\`
+\`${p2}суицид\`
 \`${p2}спать\`
 \`${p2}печаль\`
 \`${p2}курить\``)
