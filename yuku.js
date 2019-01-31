@@ -471,6 +471,7 @@ if (message.content.startsWith(p + `профиль`)) {
   Ты к нам пришёл: ${sjoin}
   Посмотерть свой счёт: \`;bal\`
   Посмотреть свой уровень: \`!rank\``)
+  message.channel.send({embed})
 }                                         
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
