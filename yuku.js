@@ -465,8 +465,8 @@ if (message.content.startsWith(p + `профиль`)) {
   let aicon = message.author.avatarURL;
   let sjoin = message.member.joinedAt;
   let embed = new Discord.RichEmbed()
-  .setTitle(message.author.username+`ваш профиль.`)
-  .setImage(aicon)
+  .setTitle(message.author.username+` ваш профиль.`)
+  .setThumbnail(aicon)
   .setColor(c)
   .setDescription(`
   Ты к нам пришёл: ${sjoin} 
