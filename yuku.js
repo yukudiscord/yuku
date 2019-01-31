@@ -335,6 +335,42 @@ if (message.content.startsWith(p + `убится`)) {
                                 ).then(function(message) {
                                 }).catch(function() {});
             }
+            if (message.content.startsWith(p + `обнять`)) {
+                message.delete();
+                let user = message.author;
+                let user1 = message.mentions.users.first();
+                message.channel.send('Загрузка...').then(msg => {
+                    const urls = [
+            "https://media1.tenor.com/images/b8b017d93d2e24d43f48ac6c63464a9c/tenor.gif?itemid=7552069",
+            "https://media1.tenor.com/images/6beb6a29603bb0769408c8ff32e035ab/tenor.gif?itemid=5525930",
+            "https://media1.tenor.com/images/4be3396644e87d3c201f8965104e57b7/tenor.gif?itemid=7539851",
+            "https://media1.tenor.com/images/4ebdcd44de0042eb416345a50c3f80c7/tenor.gif?itemid=6155660",
+            "https://media1.tenor.com/images/8055f0ab4e377e35f5884dfe3e3fec52/tenor.gif?itemid=5210972",
+            "https://media1.tenor.com/images/b4ba20e6cb49d8f8bae81d86e45e4dcc/tenor.gif?itemid=5634582",
+            "https://media1.tenor.com/images/074d69c5afcc89f3f879ca473e003af2/tenor.gif?itemid=4898650",
+            "https://media1.tenor.com/images/506aa95bbb0a71351bcaa753eaa2a45c/tenor.gif?itemid=7552075",
+            "https://media1.tenor.com/images/34a1d8c67e7b373de17bbfa5b8d35fc0/tenor.gif?itemid=8995974",
+            "https://media1.tenor.com/images/5845f40e535e00e753c7931dd77e4896/tenor.gif?itemid=9920978",
+            "https://media.tenor.com/images/ac5a0c47918dece5e69c1cc9fbb416a9/tenor.gif",
+            "https://media.tenor.com/images/61ea96bce16c53a913336a3dbc1a6100/tenor.gif",
+            "https://media1.tenor.com/images/eee4e709aa896f71d36d24836038ed8a/tenor.gif?itemid=5634619",
+            "https://media1.tenor.com/images/ea1e46bdc8e84d7af5a182eb25b127c3/tenor.gif?itemid=5712895",
+            "https://media1.tenor.com/images/530c52de04fa1a28a4bb173756a3b52b/tenor.gif?itemid=13221048",
+            "https://media1.tenor.com/images/7139ab365bba6f38685f0aeaf3d985ac/tenor.gif?itemid=12668599",
+            "https://media1.tenor.com/images/18fa6a31be0f910d99063e0ba9af44c7/tenor.gif?itemid=12891447",
+            "https://media.tenor.com/images/128ae3f7f32ed6c3781d71d072f960dd/tenor.gif",
+            "https://media1.tenor.com/images/5613c4e73a089e158fc4823523d7ad08/tenor.gif?itemid=9720920",
+            "https://media1.tenor.com/images/2e167ff6634636c27c3dbd6a33ae6c84/tenor.gif?itemid=12668686",
+            "https://media1.tenor.com/images/ee95b90c9461219ff77136d6534d1f6b/tenor.gif?itemid=11050300"
+            ];
+            let embed = new Discord.RichEmbed()
+                  .setDescription(`${user} **Обнял(а)** ${user1} **ʕ ᵔᴥᵔ ʔ**`)
+                  .setImage(urls[Math.floor(Math.random() * urls.length)])
+                  .setColor(c)
+              msg.edit({embed}).then(function(message) {
+                  }).catch(function() {});
+            });
+            }            
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
