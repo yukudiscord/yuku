@@ -459,7 +459,19 @@ message.author.send(`
 \`${p2}спать\`
 \`${p2}печаль\`
 \`${p2}курить\``)
-}                       
+}
+if (message.content.startsWith(p + `профиль`)) { 
+    message.delete()
+    let aicon = message.author.iconURL;
+    let sjoin = message.member.joinedAt;
+  const embed = new Discord.RichEmbed()
+  .setTtitle(message.author+`ваш профиль.`)
+  .setImage(aicon)
+  .setDescription(`
+  Ты к нам пришёл: ${sjoin}
+  Посмотерть свой счёт: \`;bal\`
+  Посмотреть свой уровень: \`!rank\``)
+}                                         
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
