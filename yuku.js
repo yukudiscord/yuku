@@ -328,7 +328,7 @@ if (message.content.startsWith(p + `убится`)) {
                 if (!user1 || user1.id === user.id) return message.channel.send(selfbite).then(function(message) {
                                 }).catch(function() {});
                             let embed = new Discord.RichEmbed()
-                                .setDescription(`${user} злится на ${user1}`)
+                                .setDescription(`${user} **злится на** ${user1}**(ಠ益ಠ)**`)
                                 .setImage((urls[Math.floor(Math.random() * urls.length)]))
                                 .setColor(c)
                                 message.channel.send(embed
@@ -370,7 +370,43 @@ if (message.content.startsWith(p + `убится`)) {
               msg.edit({embed}).then(function(message) {
                   }).catch(function() {});
             });
-            }            
+            }
+            if (message.content.startsWith(p + `поцелуй`)) {
+                message.delete();
+                let user = message.author;
+                let user1 = message.mentions.users.first();
+                message.channel.send('Загрузка...').then(msg => {
+                    const urls = [
+            "https://media1.tenor.com/images/78095c007974aceb72b91aeb7ee54a71/tenor.gif?itemid=5095865",
+            "https://media1.tenor.com/images/ea9a07318bd8400fbfbd658e9f5ecd5d/tenor.gif?itemid=12612515",
+            "https://media.tenor.com/images/197df534507bd229ba790e8e1b5f63dc/tenor.gif",
+            "https://media1.tenor.com/images/02d9cae34993e48ab5bb27763d5ca2fa/tenor.gif?itemid=4874618",
+            "https://media1.tenor.com/images/daf7b144c7caceee3d90dca791a4c790/tenor.gif?itemid=7572438",
+            "https://media1.tenor.com/images/621ceac89636fc46ecaf81824f9fee0e/tenor.gif?itemid=4958649",
+            "https://media1.tenor.com/images/632a3db90c6ecd87f1242605f92120c7/tenor.gif?itemid=5608449",
+            "https://media1.tenor.com/images/1306732d3351afe642c9a7f6d46f548e/tenor.gif?itemid=6155670",
+            "https://media1.tenor.com/images/105a7ad7edbe74e5ca834348025cc650/tenor.gif?itemid=9158317",
+            "https://media1.tenor.com/images/9fac3eab2f619789b88fdf9aa5ca7b8f/tenor.gif?itemid=12925177",
+            "https://media1.tenor.com/images/5654c7b35e067553e99bb996535c0a75/tenor.gif?itemid=10358833",
+            "https://media1.tenor.com/images/a0b68f4704f811bfcc517574425e96a5/tenor.gif?itemid=5291693",
+            "https://media1.tenor.com/images/0be6297b653edf561c5810ec547a9802/tenor.gif?itemid=6203355",
+            "https://media1.tenor.com/images/199a381fcb404e2c520178882951ab56/tenor.gif?itemid=6155643",
+            "https://media1.tenor.com/images/0de1905e4a8b2bb465d04a1f96df7f85/tenor.gif?itemid=4797281",
+            "https://media1.tenor.com/images/af1216d35f8ec076b593401b19ddd0bf/tenor.gif?itemid=13188942",
+            "https://media1.tenor.com/images/fdaaa5ae17de7fab7f90beae1bdcf002/tenor.gif?itemid=10356312",
+            "https://media1.tenor.com/images/1d58400ebd14cd2518ccb270f1e5b2ca/tenor.gif?itemid=12625045",
+            "https://media1.tenor.com/images/6e3b02e851514c94717082562a759228/tenor.gif?itemid=12781791",
+            "https://media1.tenor.com/images/84dc754dda5d92f0824762a35ebecc25/tenor.gif?itemid=12873198",
+            "https://media1.tenor.com/images/627dea6d9216b1b6d15819405a349bda/tenor.gif?itemid=13299562"
+            ];
+            let embed = new Discord.RichEmbed()
+                  .setDescription(`${user} **поцеловал(а)** ${user1} **( ͡° ͜ʖ ͡°)**`)
+                  .setImage(urls[Math.floor(Math.random() * urls.length)])
+                  .setColor(c)
+              msg.edit({embed}).then(function(message) {
+                  }).catch(function() {});
+            });
+            }                        
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
