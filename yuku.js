@@ -406,6 +406,38 @@ if (message.content.startsWith(p + `убится`)) {
               msg.edit({embed}).then(function(message) {
                   }).catch(function() {});
             });
+            }
+            if (message.content.startsWith(p + `лизнуть`)) {
+                message.delete();
+                let user = message.author;
+                let user1 = message.mentions.users.first();
+                message.channel.send('Загрузка...').then(msg => {
+                    const urls = [
+            "https://media1.tenor.com/images/5f73f2a7b302a3800b3613095f8a5c40/tenor.gif?itemid=10005495",
+            "https://media1.tenor.com/images/fc0ef2ba03d82af0cbd6c5815c3c83d5/tenor.gif?itemid=12141725",
+            "https://media1.tenor.com/images/2b846c6bb5dc0b03dfe7776bc581608c/tenor.gif?itemid=11268572",
+            "https://media1.tenor.com/images/3d760daf1c114de881010dd533acda28/tenor.gif?itemid=8404083",
+            "https://media1.tenor.com/images/8e16f796361326db09c5d81d18d91d28/tenor.gif?itemid=12630638",
+            "https://media1.tenor.com/images/e4cbd6f3a56bfbc5fb0ff2463a522a9a/tenor.gif?itemid=9396157",
+            "https://media1.tenor.com/images/f46762ad38fbfed9e4e46bf7b89497c2/tenor.gif?itemid=12141724",
+            "https://images-ext-1.discordapp.net/external/YveW8Lanx1kD9154i-y3ZalegChtroIEACzKTRsoNnc/https/cdn.weeb.sh/images/H13HS7S6-.gif?width=450&height=253",
+            "https://images-ext-2.discordapp.net/external/r8JiD5lRAfxjdcNRHBqfjJw3dU31fkFGOnIrBwe94Fg/https/cdn.weeb.sh/images/ryGpGsnAZ.gif?width=450&height=253",
+            "https://images-ext-2.discordapp.net/external/FkCpjXWxRoOX04p318pJb2KDyTcgzSk7DsAufy8m9pc/https/cdn.weeb.sh/images/BkvTBQHaZ.gif?width=450&height=253",
+            "https://images-ext-1.discordapp.net/external/AqmvPrnwsYvvxn5kgJH9Bd-J7mKkl3ka-jpVCwOiMyQ/https/cdn.weeb.sh/images/Sk15iVlOf.gif?width=486&height=274",
+            "https://images-ext-2.discordapp.net/external/EVS-yozpRCwqM9JrkkgoTry1IqkDyTJVNjF7ZhIik5U/https/cdn.weeb.sh/images/S1Ill0_vW.gif?width=450&height=260",
+            "https://images-ext-1.discordapp.net/external/EWiWNWlRxXpK4c98xW9VxZyh6KfO4DUIFnuOMf7NpCQ/https/cdn.weeb.sh/images/rJ6hrQr6-.gif?width=486&height=274",
+            "https://images-ext-1.discordapp.net/external/GP9w453JCQ0V06BTF67fUAQZ216QL7aOuU4MWbi8YMI/https/cdn.weeb.sh/images/rktygCOD-.gif?width=486&height=274",
+            "https://images-ext-2.discordapp.net/external/9xiregisvDewxtEC9iCJPqJWNlrFEn3kcj3YA-ev_Po/https/cdn.weeb.sh/images/H1EJxR_vZ.gif?width=450&height=253",
+            "https://images-ext-2.discordapp.net/external/9bHT8aeSTZnMcfTFsR4S_IawF7WOUwK4fKLGhIHVYnw/https/cdn.weeb.sh/images/Syg8gx0OP-.gif?width=288&height=161",
+            "https://images-ext-2.discordapp.net/external/kfgdvK8A0dborfyqQbX3tNsZ1ON5_1vTc3t_eEs7g3g/https/cdn.weeb.sh/images/HkEqiExdf.gif?width=486&height=273"
+            ];
+            let embed = new Discord.RichEmbed()
+                  .setDescription(`${user} **лизнул(а)** ${user1} **(￣ω￣)**`)
+                  .setImage(urls[Math.floor(Math.random() * urls.length)])
+                  .setColor(c)
+              msg.edit({embed}).then(function(message) {
+                  }).catch(function() {});
+            });
             }                        
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
