@@ -462,14 +462,14 @@ message.author.send(`
 }
 if (message.content.startsWith(p + `профиль`)) { 
     message.delete()
- //   let aicon = message.author.iconURL;
-  //  let sjoin = message.member.joinedAt;
+  let aicon = message.author.iconURL;
+  let sjoin = message.member.joinedAt;
   let embed = new Discord.RichEmbed()
-  .setTtitle(message.author+`ваш профиль.`)
-  .setImage("")
+  .setTitle(message.author+`ваш профиль.`)
+  .setImage(aicon)
   .setColor(c)
   .setDescription(`
-  Ты к нам пришёл: 
+  Ты к нам пришёл: ${sjoin} 
   Посмотерть свой счёт: \`;bal\`
   Посмотреть свой уровень: \`!rank\``)
   message.channel.send({embed});
