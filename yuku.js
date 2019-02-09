@@ -1,7 +1,7 @@
 Discord =require('discord.js');
 const client =new Discord.Client();
 
-p="m!"
+p="p!"
 c="#ddfffa"
 //let aicon = message.guild.iconURL;
 //let nick= message.member.name;
