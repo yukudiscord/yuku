@@ -483,7 +483,7 @@ if (message.content.startsWith(p + `update`) && (message.author.id === "40634316
     .setColor("#000000")
     .setTitle("Обновление! ☕")
     .setDescription(say)
-    .setImage("https://media.discordapp.net/attachments/473062290040553472/543877472773603342/PicsArt_02-09-09.34.53.png?width=770&height=88")
+    .setImage("https://cdn.discordapp.com/attachments/473062290040553472/543886709557821451/update_banner.png")
     message.channel.send({embed});
 }
 });
