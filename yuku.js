@@ -1,7 +1,7 @@
 Discord =require('discord.js');
 const client =new Discord.Client();
 
-p="юку!"
+p="m!"
 c="#ddfffa"
 //let aicon = message.guild.iconURL;
 //let nick= message.member.name;
@@ -477,13 +477,13 @@ if (message.content.startsWith(p + `профиль`)) {
   message.channel.send({embed});
 }                                         
 ////////////////////////////////////////////////////////////////////////////////
-if (message.content.startsWith(p + `news`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
+if (message.content.startsWith(p + `update`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
     let say = message.content.slice((p + 'embed').length);
     const embed = new Discord.RichEmbed()
-    .setColor("RANDOM")
-    .setTitle("СВЕЖИЕ НОВОСТИ!")
+    .setColor("#000000")
+    .setTitle("Обновление! ☕")
     .setDescription(say)
-    .setTimestamp();
+    .setThumbnail("https://cdn.discordapp.com/attachments/543719814166872070/543745220286611477/PicsArt_02-09-12.49.19.png")
     message.channel.send({embed});
 }
 });
