@@ -478,12 +478,12 @@ if (message.content.startsWith(p + `профиль`)) {
 }                                         
 ////////////////////////////////////////////////////////////////////////////////
 if (message.content.startsWith(p + `update`) && (message.author.id === "406343162651738112" || message.author.id === "341988428457705482")) {
-    let say = message.content.slice((p + 'embed').length);
+    let say = message.content.slice((p + 'update').length);
     const embed = new Discord.RichEmbed()
     .setColor("#000000")
     .setTitle("Обновление! ☕")
     .setDescription(say)
-    .setImage("https://cdn.discordapp.com/attachments/543719814166872070/543745220286611477/PicsArt_02-09-12.49.19.png")
+    .setImage("https://media.discordapp.net/attachments/473062290040553472/543877472773603342/PicsArt_02-09-09.34.53.png?width=770&height=88")
     message.channel.send({embed});
 }
 });
